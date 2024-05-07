@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkp65v0pi3x4"]
+[gd_scene load_steps=3 format=3 uid="uid://bkp65v0pi3x4"]
 
 [ext_resource type="Texture2D" uid="uid://b5np8d67cncg4" path="res://Art/speedy_saucer_assets/ufoGreen.png" id="1_l21or"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8kb1o"]
+radius = 45.0
 
 [node name="Player" type="RigidBody2D"]
 gravity_scale = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_l21or")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8kb1o")
