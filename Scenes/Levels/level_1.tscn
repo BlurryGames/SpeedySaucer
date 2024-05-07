@@ -1,14 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://ymrdwjns67a1"]
+[gd_scene load_steps=5 format=3 uid="uid://ymrdwjns67a1"]
 
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_54k2a"]
 [ext_resource type="Texture2D" uid="uid://bh7sqi6o7fg88" path="res://Art/speedy_saucer_assets/purple.png" id="1_huqsd"]
 [ext_resource type="PackedScene" uid="uid://bkp65v0pi3x4" path="res://Scenes/Characters/player.tscn" id="2_pfjus"]
+[ext_resource type="PackedScene" uid="uid://dg1jj7amgs5oy" path="res://Scenes/maze.tscn" id="4_clae7"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_54k2a")
-
-[node name="Player" parent="." instance=ExtResource("2_pfjus")]
-position = Vector2(100, 100)
 
 [node name="Background" type="TextureRect" parent="."]
 z_index = -100
@@ -16,3 +14,9 @@ offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_huqsd")
 stretch_mode = 1
+
+[node name="Player" parent="." instance=ExtResource("2_pfjus")]
+position = Vector2(100, 100)
+
+[node name="Maze" parent="." instance=ExtResource("4_clae7")]
+z_index = -50
