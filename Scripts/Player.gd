@@ -1,16 +1,7 @@
 class_name Player extends RigidBody2D
 
 func _ready()-> void:
-	test()
+	printDoubled(10)
 
-func _process(delta: float)-> void:
-	pass
-
-func test()-> void:
-	var myVariable: String = "Hello"
-	print(myVariable)
-	print(myVariable)
-	print(myVariable)
-	myVariable = "Good bye"
-	print(myVariable)
-	print(myVariable)
+func printDoubled(inputNumber: int)-> void:
+	print(inputNumber * 2)
