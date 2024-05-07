@@ -12,8 +12,4 @@ texture = ExtResource("1_huqsd")
 stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_pfjus")]
-position = Vector2(274, 201)
-
-[node name="Player2" parent="." instance=ExtResource("2_pfjus")]
-position = Vector2(631, 189)
-gravity_scale = 1.0
+position = Vector2(100, 100)
