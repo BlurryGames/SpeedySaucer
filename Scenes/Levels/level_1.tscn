@@ -1,19 +1,64 @@
-[gd_scene load_steps=5 format=3 uid="uid://ymrdwjns67a1"]
+[gd_scene load_steps=7 format=3 uid="uid://ymrdwjns67a1"]
 
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_54k2a"]
 [ext_resource type="Texture2D" uid="uid://bh7sqi6o7fg88" path="res://Art/speedy_saucer_assets/purple.png" id="1_huqsd"]
 [ext_resource type="PackedScene" uid="uid://bkp65v0pi3x4" path="res://Scenes/Characters/player.tscn" id="2_pfjus"]
 [ext_resource type="PackedScene" uid="uid://dg1jj7amgs5oy" path="res://Scenes/maze.tscn" id="4_clae7"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_cxvvy"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_hy8jd"]
+font_size = 24
+
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_54k2a")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Graphics" type="Node" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Graphics"]
+layer = -10
+
+[node name="Background" type="TextureRect" parent="Graphics/CanvasLayer"]
 z_index = -100
-offset_right = 1152.0
-offset_bottom = 648.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_huqsd")
 stretch_mode = 1
+
+[node name="StartLabel" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = 93.0
+offset_top = 7.0
+offset_right = 188.0
+offset_bottom = 52.0
+text = "START"
+label_settings = SubResource("LabelSettings_cxvvy")
+
+[node name="EndLabel" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = 185.0
+offset_top = -304.0
+offset_right = 280.0
+offset_bottom = -259.0
+text = "END"
+label_settings = SubResource("LabelSettings_cxvvy")
+
+[node name="Tutorial" type="Label" parent="Graphics"]
+z_index = -25
+offset_left = -407.0
+offset_top = 8.0
+offset_right = 252.0
+offset_bottom = 190.0
+text = "Rules:
+- Use arrow keys or WASD to move
+- Go from the start to the end
+- Yo will go back to the start if
+   you go outside of the maze"
+label_settings = SubResource("LabelSettings_hy8jd")
 
 [node name="Player" parent="." instance=ExtResource("2_pfjus")]
 position = Vector2(135, 73)
