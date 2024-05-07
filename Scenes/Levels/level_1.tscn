@@ -5,11 +5,12 @@
 
 [node name="Level1" type="Node2D"]
 
+[node name="Player" parent="." instance=ExtResource("2_pfjus")]
+position = Vector2(100, 100)
+
 [node name="Background" type="TextureRect" parent="."]
+z_index = -100
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_huqsd")
 stretch_mode = 1
-
-[node name="Player" parent="." instance=ExtResource("2_pfjus")]
-position = Vector2(100, 100)
