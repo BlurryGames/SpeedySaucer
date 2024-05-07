@@ -5,3 +5,4 @@ res://Scenes/Characters/ufo.tscn
 res://Scenes/Characters/player.tscn
 res://Scripts/Level1.gd
 res://Scripts/Player.gd
+res://Scripts/Level.gd
