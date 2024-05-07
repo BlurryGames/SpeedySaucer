@@ -1,3 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715066754
+::res://::1715067298
 icon.svg::CompressedTexture2D::6344490047190025739::1715066750::1715066756::1::::<><>::
+README.md::TextFile::-1::1715066802::0::1::::<><>::
+::res://Art/::1715067298
+::res://Art/speedy_saucer_assets/::1715067272
+darkPurple.png::CompressedTexture2D::6952795002043073656::1715067272::1715067299::1::::<><>::
+purple.png::CompressedTexture2D::2944924624616316611::1715067272::1715067299::1::::<><>::
+ufoGreen.png::CompressedTexture2D::4519892796643315257::1715067272::1715067299::1::::<><>::
+::res://Scenes/::1715066895
+::res://Scenes/Levels/::1715067298
+level_1.tscn::PackedScene::1710343496653152018::1715066921::0::1::::<><>::
