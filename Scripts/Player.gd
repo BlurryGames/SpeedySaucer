@@ -7,5 +7,10 @@ func _process(delta: float)-> void:
 	pass
 
 func test()-> void:
-	print((2 + 3) * 5)
-	print("2 + 2 is: " + str(4))
+	var myVariable: String = "Hello"
+	print(myVariable)
+	print(myVariable)
+	print(myVariable)
+	myVariable = "Good bye"
+	print(myVariable)
+	print(myVariable)
