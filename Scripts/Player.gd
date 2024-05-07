@@ -1,7 +1,4 @@
 class_name Player extends RigidBody2D
 
 func _ready()-> void:
-	printDoubled(10)
-
-func printDoubled(inputNumber: int)-> void:
-	print(inputNumber * 2)
+	apply_impulse(Vector2(25.0, 0.0))
