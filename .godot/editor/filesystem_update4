@@ -1,1 +1,5 @@
 res://Scenes/Levels/level_1.tscn
+res://Scenes/Levels/ufo.tscn
+res://Scenes/ufo.tscn
+res://Scenes/Characters/ufo.tscn
+res://Scenes/Characters/player.tscn
